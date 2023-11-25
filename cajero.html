@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Cajero.css">
+    <title>YaKayo</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="">
+        <h1 id="logo">YaKayo</h1>
+        </a>
+        <span id="saludo"></span>
+            <div class="iconos">
+                <a href="">Usuario</a>
+                <a href="">notificaciones</a>
+                <a href="">settings</a>
+            </div>
+    </nav>
+
+    <div>
+        <form>
+            <div>
+                <button type="button" id="btnConsult" onclick="">Consultar Saldo</button>
+            </div>
+
+            <div>
+                <input type="number"placeholder="$" id="Deposito">
+                <button type="button" id="btnDeposit" onclick="">Depositar</button>
+            </div>
+
+            <div>
+                <input type="number"placeholder="$" id="withdraw">
+                <button type="button" id="btnRetirar" onclick="retirarCantidad()">Retirar</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <div class="resultado">
+                <span id="transaccion"></span>
+            </div>
+            <div class="">
+                <span id="nuevoSaldo"></span>
+            </div>
+            <div class="">
+                <span id="saldo"></span>
+            </div>
+            <div class="">
+                <span id="alerta"></span>
+            </div>
+            <div class="">
+                <span id="alertaSaldo"></span>
+            </div>
+            <div class="">
+                <span id="alertaTransaccion"></span>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <button id="salir"type="button"onclick="goToStart()">Salir</button>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+    
+
